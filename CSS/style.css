@@ -1,0 +1,1530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F9F8F6 !important;
+}
+
+/* ========================================================================
+   header & navigation styles
+   ======================================================================== */
+
+.nav-header{
+    width: 100%;
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px 20px !important;
+
+    /* 0 = vertical and horizontal offset
+       10px = blur
+       30px = spread
+       outset = shadow outside the box */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* brand title styling */
+.title1{
+    font-size: 25px !important;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: white;
+    font-weight: bold;
+}
+
+/* icon size */
+.icon1{
+    font-size: 25px !important;
+}
+
+/* toggle button pushed to far right */
+.navbar-toggler{
+    margin-left: auto;
+}
+
+/* navigation list */
+.list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+/* navigation link styling */
+.list li a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    padding: 8px 15px;        /* important - to show the box */
+    border-radius: 10px;      /* smooth edges */
+    transition: 0.3s ease;    /* smooth transition */
+}
+
+/* navigation link hover effect */
+.list li a:hover{
+    background: rgba(255,255,255,0.2); /* hover box */
+}
+
+/* ================= mobile responsive ================= */
+@media (max-width: 768px){
+
+    /* collapse shows vertical and centered text */
+    .collapse.show .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centered */
+        width: 100%;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    .list li{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* scroll margin for sticky header offset on each section */
+#sec1, #sec2, #sec3, #sec4, #sec5 {
+    scroll-margin-top: 100px; 
+}
+
+
+/* ======================================================================== */
+
+/* ========================================================================
+   section 1: hero section styles
+   ======================================================================== */
+
+/* section 1 heading */
+.section1 h1{
+   
+    font-size: 60px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+    text-shadow: 1px 1px 5px gray;
+   
+}
+
+/* section 1 paragraph */
+.section1 p{
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+    white-space: pre-line;
+    
+}
+
+/* explore text link */
+.explore-text {
+    color: #024783;
+    font-size: 20px;   
+    text-decoration: none;
+}
+
+/* explore container with fade animation */
+.explore-container {
+    text-align: center;
+    margin-top: 50px;
+    
+    /* fade animation theme */
+    opacity: 0; /* start hidden */
+    transform: translateY(20px); /* slight downward offset */
+    animation: fadeInUp 1s forwards; /* 1 second duration */
+    animation-delay: 0.5s; /* half second delay before appearing */
+}
+
+/* arrows container */
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* arrow icon styling */
+.arrows i {
+    color: #024783; 
+    font-size: 24px; /* arrows size */
+    animation: bounce 1s infinite; /* arrow movement */
+}
+
+/* arrow bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* fade in up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* robot image floating animation */
+.robot-img {
+    animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* float up down animation */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px); /* moves up */
+    }
+    100% {
+        transform: translateY(0); /* moves back down */
+    }
+}
+
+/* ======================================================================== */
+
+/* ========================================================================
+   section 2: ai applications styles
+   ======================================================================== */
+
+
+/* section 2 title */
+/* applies to all h2 inside for same styles, optional here */
+.section2-details h2{
+    font-size: 45px;
+
+    /* from google fonts */
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    /* line spacing for safety, not necessary here */
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+}
+
+/* section 2 line under title */
+/* empty div styled as colored line */
+.section2-div{
+    width: 90px;
+    height: 4px;
+    border-radius: 10px;
+    /* center it */
+    margin: auto;
+    /* spacing from text above */
+    margin-top: 15px;
+    /* spacing from text below */
+    margin-bottom: 15px;
+    /* -webkit for chrome and edge browsers */
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+}
+
+/* section 2 paragraph */
+.section2-details p{
+    font-size: 15px;
+    white-space: pre-line;
+    color: rgb(98, 98, 98);
+    /* css font, not google fonts, to be different from above */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* cards don't stick to screen frame, space left and right */
+.section2-divs{
+    width: 85%;
+    margin: auto;
+}
+
+/* common card div styling */
+.com-div {
+    margin-left: 10px;
+    background: #ffffff;
+    border-radius: 22px;
+    /* padding inside */
+    /* first value top/bottom, second value left/right */
+    padding: 35px 25px;
+
+
+    /* 0 = vertical and horizontal offset
+       10px = blur
+       30px = spread
+       outset = shadow outside the box */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    /* smooth animation on hover, 0.3 seconds */
+    transition: 0.3s ease;
+    
+}
+
+/* card hover effect - blue top border */
+.com-div:hover {
+
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    border-top: 6px solid hsl(210, 100%, 25%);
+}
+
+/* row 1 card sizing - 4 cards per row approximately */
+.section2-divs-row1 .com-div {
+    flex: 1 1 23%; /* 4 divs per row approximately */
+    max-width: 23%;
+    min-width: 250px; /* minimum size */
+    aspect-ratio: 1 / 1 !important;
+}
+
+/* all icons and arrows in section 2 */
+.com-div i {
+    background: #e7f5ff;
+    padding: 18px;
+    font-size: 28px;
+    border-radius: 14px;
+    color: #2b8bd9;
+    margin-bottom: 20px;
+}
+
+/* card title */
+.com-div h2 {
+    font-size: 22px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: #0e0e0e;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+/* card description */
+.com-div small {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #6b6b6b;
+    margin-bottom: 18px;
+}
+
+/* modal image rounded corners */
+.round_img_corner{
+    border-radius: 10px ;
+}
+
+/* modal frame rounded edges */
+.round_frame_edges{
+     border-radius: 20px !important;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    background: -webkit-linear-gradient( left,  hsl(211, 32%, 54%), hsl(180, 70%, 45%)) !important;
+}
+
+/* modal frame paragraph */
+.round_frame_edges p{
+     color: rgb(253, 253, 253);
+     font-weight: bold;
+     font-size: 25px;
+}
+
+/* modal frame strong text */
+.round_frame_edges strong{
+    font-size: 20px !important;
+    color: #fff;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* modal horizontal line */
+.line{
+    width: 90px;
+    background-color: #ffffff !important;
+}
+
+/* modal list items */
+.round_frame_edges li{
+    line-height: 27px;
+    font-style: italic;
+    color: #F9F8F6;
+}
+
+/* ======================================================================== */
+
+/* ========================================================================
+   section 3: popular ai models styles
+   ======================================================================== */
+
+.section3{
+    background-color:  hsl(210, 25%, 95%) !important;
+    width: 100% !important;
+    padding: 30px 0px !important;
+    border-radius: 5px !important;
+}
+
+/* section 3 title */
+.section3-details h2{
+    font-size: 45px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+}
+
+/* section 3 line */
+.section3-div{
+    width: 90px;
+    height: 4px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+}
+
+/* section 3 paragraph */
+.section3-details p{
+    font-size: 15px;
+    white-space: pre-line;
+    color: rgb(98, 98, 98);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* section 3 cards container */
+.section3-divs{
+    width: 90%;
+    margin: auto;
+}
+
+/* section 3 card styling */
+.sct-div{
+    margin-left: 10px;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;       /* content stacked vertically */
+    justify-content: center;      /* centered vertically */
+    align-items: center;          /* centered horizontally */
+    text-align: center;
+}
+
+/* section 3 card hover effect */
+.sct-div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    border-top: 6px solid hsl(210, 100%, 25%);
+}
+
+/* section 3 row 1 card sizing */
+.section3-divs-row1 .sct-div {
+    flex: 1 1 23%; /* 4 divs per row */
+    max-width: 23%;
+    min-width: 250px; /* minimum size */
+    aspect-ratio: 1 / 1 !important;
+}
+
+/* section 3 card icon */
+.sct-div i {
+    background: #e7f5ff;
+    padding: 18px;
+    font-size: 28px;
+    border-radius: 50px;
+    color: #2b8bd9;
+    margin-bottom: 20px;
+}
+
+/* section 3 card title */
+.sct-div h2 {
+    font-size: 22px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: #0e0e0e;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+/* section 3 card description */
+.sct-div small {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #6b6b6b;
+    margin-bottom: 18px;
+}
+
+/* section 3 card learn more link */
+.sct-div a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #16c3af;
+    text-decoration: none;
+}
+
+/* section 3 card link arrow icon */
+.sct-div a i {
+    font-size: 14px;
+    margin-left: 5px;
+    background: none;
+    padding: 0;
+    color: #16c3af;
+}
+
+/* ======================================================================== */
+
+/* ========================================================================
+   section 4: ai usage statistics styles
+   ======================================================================== */
+
+/* section 4 title */
+.section4-details h2{
+    font-size: 45px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+    
+}
+
+/* section 4 line */
+.section4-div{
+    width: 90px;
+    height: 4px;
+    border-radius: 10px;
+    /* center it */
+    margin: auto;
+    /* not sticking to title or paragraph */
+    /* didn't use single margin line so auto doesn't break */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+    
+}
+
+/* section 4 paragraph */
+.section4-details p{
+    font-size: 15px;
+    white-space: pre-line;
+    color: rgb(98, 98, 98);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ========== css-only bar chart ========== */
+.chart-wrapper {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem; /* rem = 16px, so padding is 16px value */
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+    max-width: 650px;
+    margin: auto;
+}
+
+/* chart title */
+.chart-title {
+    font-size: 1.25rem; /* rem = 16px */
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* bar chart container */
+.bar-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+/* chart row */
+.chart-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* chart label */
+.chart-label {
+    width: 100px;
+    font-size: 15px;
+    color: #6c7a89;
+    padding-left: 10px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+/* chart bars container */
+.chart-bars {
+    flex: 1;
+    display: flex;
+    gap: 6px;
+    height: 28px;
+}
+
+/* individual chart bar */
+.chart-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    min-width: 4px;
+}
+
+/* chart bar hover effect */
+.chart-bar:hover {
+    filter: brightness(1.15);
+    transform: scaleY(1.15);
+}
+
+/* ==== colors for years ==== */
+.bar-2023 { background: hsl(180, 70%, 55%); } 
+.bar-2024 { background: hsl(210, 80%, 60%); } 
+.bar-2025 { background: hsl(260, 70%, 65%); } 
+
+/* ==== legend ==== */
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e9f0;
+}
+
+/* legend item */
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.9rem;
+    color: #6c7a89;
+}
+
+/* legend color box */
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+/* table header */
+thead{
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+    color: #fff;
+}
+
+/* table title */
+.tab-title{
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+    padding: 10px 0px;
+}
+
+/* table container */
+.div5-table{
+    background: #ffffff;
+    padding: 30px 30px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+/* table body row bottom border */
+.div5-table table tbody tr td{
+    border-bottom: rgb(218, 224, 231) 1px solid;;
+}
+
+/* table body cell padding */
+.div5-table table tbody tr td, table tbody tr th{
+    padding-bottom: 20px;
+}
+
+/* table header first cell rounded corner */
+.div5-table  thead tr th:first-child  {
+    border-top-left-radius: 15px; /* matches container radius */
+}
+
+/* table header last cell rounded corner */
+.div5-table thead tr th:last-child {
+    border-top-right-radius: 15px; /* matches container radius */
+}
+
+
+/* ======================================================================== */
+
+/* ========================================================================
+   login modal styles
+   ======================================================================== */
+
+.custom-modal {
+    border-radius: 25px !important;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    position: relative;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+/* close button */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #eef3f6;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #444;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+/* modal icon box */
+.modal-icon-box {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -30px;
+}
+
+/* modal lock icon */
+.modal-lock {
+    font-size: 30px;
+    color: white;
+}
+
+/* modal body content spacing */
+.custom-modal-body {
+    text-align: left;
+    padding: 30px 40px;
+}
+
+/* modal body heading */
+.custom-modal-body h2 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.2;
+    color: rgb(7, 7, 140);
+    padding: 0px 140px !important;
+}
+
+/* modal body small text */
+.custom-modal-body small {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.2;
+    color: rgb(98, 98, 98);
+    padding: 0px 100px !important;
+}
+
+/* custom input styling */
+.custom-input {
+    border-radius: 15px !important;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+/* custom button styling */
+.custom-btn {
+    width: 95%;
+    padding: 10px 10px !important;
+    border-radius: 12px !important;
+    font-size: 20px !important;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold !important;
+    line-height: 1.2;
+    color: white !important;
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+    border: 1px solid  !important;
+    margin-top: 15px;
+    margin-left: 12px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+   transition: 0.5s ease !important; 
+}
+
+/* custom button hover */
+.custom-btn:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* user link in navbar */
+#userlink{
+    border: 1px solid rgb(7, 7, 140);
+    padding: 10px;
+    border-radius: 25px;
+    transition: 1.5s;
+
+}
+
+/* user link hover */
+#userlink:hover{
+    text-shadow: 1px 1px 5px darkblue;
+    color: rgb(109, 161, 161);
+    font-size: 20px;
+}
+
+
+/* ======================================================================== */
+
+/* ========================================================================
+                       (login/register sliding form)
+   ======================================================================== */
+
+.auth-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    border: 2px solid #00d4ff;
+    overflow: hidden;
+}
+
+.auth-wrapper .credentials-panel {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* signin panel */
+.credentials-panel.signin {
+    left: 0;
+    padding: 0 40px;
+}
+
+/* signin panel slide elements */
+.credentials-panel.signin .slide-element {
+    transform: translateX(0%);
+    transition: .7s;
+    opacity: 1;
+}
+
+.credentials-panel.signin .slide-element:nth-child(1) {
+    transition-delay: 2.1s;
+}
+
+.credentials-panel.signin .slide-element:nth-child(2) {
+    transition-delay: 2.2s;
+}
+
+.credentials-panel.signin .slide-element:nth-child(3) {
+    transition-delay: 2.3s;
+}
+
+.credentials-panel.signin .slide-element:nth-child(4) {
+    transition-delay: 2.4s;
+}
+
+.credentials-panel.signin .slide-element:nth-child(5) {
+    transition-delay: 2.5s;
+}
+
+/* toggled state - signin elements slide out */
+.auth-wrapper.toggled .credentials-panel.signin .slide-element {
+    transform: translateX(-120%);
+    opacity: 0;
+}
+
+.auth-wrapper.toggled .credentials-panel.signin .slide-element:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signin .slide-element:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signin .slide-element:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signin .slide-element:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signin .slide-element:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+/* signup panel */
+.credentials-panel.signup {
+    right: 0;
+    padding: 0 60px;
+}
+
+/* signup panel slide elements */
+.credentials-panel.signup .slide-element {
+    transform: translateX(120%);
+    transition: .7s ease;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.credentials-panel.signup .slide-element:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.credentials-panel.signup .slide-element:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.credentials-panel.signup .slide-element:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.credentials-panel.signup .slide-element:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.credentials-panel.signup .slide-element:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.credentials-panel.signup .slide-element:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+/* toggled state - signup elements slide in */
+.auth-wrapper.toggled .credentials-panel.signup .slide-element {
+    transform: translateX(0%);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.auth-wrapper.toggled .credentials-panel.signup .slide-element:nth-child(1) {
+    transition-delay: 1.7s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signup .slide-element:nth-child(2) {
+    transition-delay: 1.8s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signup .slide-element:nth-child(3) {
+    transition-delay: 1.9s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signup .slide-element:nth-child(4) {
+    transition-delay: 1.9s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signup .slide-element:nth-child(5) {
+    transition-delay: 2.0s;
+}
+
+.auth-wrapper.toggled .credentials-panel.signup .slide-element:nth-child(6) {
+    transition-delay: 2.1s;
+}
+
+/* credentials panel heading */
+.credentials-panel h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+/* field wrapper */
+.credentials-panel .field-wrapper {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+
+/* field input */
+.field-wrapper input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-right: 23px;
+    transition: .5s;
+}
+
+/* field input focus/valid state */
+.field-wrapper input:focus,
+.field-wrapper input:valid {
+    border-bottom: 2px solid #00d4ff;
+}
+
+/* field label */
+.field-wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+}
+
+/* field label focus/valid state */
+.field-wrapper input:focus~label,
+.field-wrapper input:valid~label {
+    top: -5px;
+    color: #00d4ff;
+}
+
+/* field icon */
+.field-wrapper i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 18px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+/* field icon focus/valid state */
+.field-wrapper input:focus~i,
+.field-wrapper input:valid~i {
+    color: #00d4ff;
+}
+
+/* submit button */
+.submit-button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #00d4ff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* submit button hover effect */
+.submit-button::before {
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: linear-gradient(#1a1a2e, #00d4ff, #1a1a2e, #00d4ff);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.submit-button:hover:before {
+    top: 0;
+}
+
+/* switch link */
+.switch-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+/* switch link anchor */
+.switch-link a {
+    text-decoration: none;
+    color: #00d4ff;
+    font-weight: 600;
+}
+
+/* switch link anchor hover */
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* welcome section */
+.welcome-section {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* welcome section signin */
+.welcome-section.signin {
+    right: 0;
+    text-align: right;
+    padding: 0 40px 60px 150px;
+}
+
+/* welcome section signin slide elements */
+.welcome-section.signin .slide-element {
+    transform: translateX(0);
+    transition: .7s ease;
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.welcome-section.signin .slide-element:nth-child(1) {
+    transition-delay: 2.0s;
+}
+
+.welcome-section.signin .slide-element:nth-child(2) {
+    transition-delay: 2.1s;
+}
+
+/* toggled state - welcome signin slides out */
+.auth-wrapper.toggled .welcome-section.signin .slide-element {
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.auth-wrapper.toggled .welcome-section.signin .slide-element:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.auth-wrapper.toggled .welcome-section.signin .slide-element:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+/* welcome section signup */
+.welcome-section.signup {
+    left: 0;
+    text-align: left;
+    padding: 0 150px 60px 38px;
+    pointer-events: none;
+}
+
+/* welcome section signup slide elements */
+.welcome-section.signup .slide-element {
+    transform: translateX(-120%);
+    transition: .7s ease;
+    opacity: 0;
+    filter: blur(10PX);
+}
+
+.welcome-section.signup .slide-element:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.welcome-section.signup .slide-element:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+/* toggled state - welcome signup slides in */
+.auth-wrapper.toggled .welcome-section.signup .slide-element {
+    transform: translateX(0%);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.auth-wrapper.toggled .welcome-section.signup .slide-element:nth-child(1) {
+    transition-delay: 1.7s;
+}
+
+.auth-wrapper.toggled .welcome-section.signup .slide-element:nth-child(2) {
+    transition-delay: 1.8s;
+}
+
+/* welcome section heading */
+.welcome-section h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+/* welcome section paragraph */
+.welcome-section p {
+    font-size: 16px;
+}
+
+/* background shape */
+.auth-wrapper .background-shape {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    height: 600px;
+    width: 850px;
+    background: linear-gradient(45deg, #1a1a2e, #00d4ff);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    transition: 1.5s ease;
+    transition-delay: 1.6s;
+}
+
+/* toggled state - background shape */
+.auth-wrapper.toggled .background-shape {
+    transform: rotate(0deg) skewY(0deg);
+    transition-delay: .5s;
+}
+
+/* secondary shape */
+.auth-wrapper .secondary-shape {
+    position: absolute;
+    left: 250px;
+    top: 100%;
+    height: 700px;
+    width: 850px;
+    background: #1a1a2e;
+    border-top: 3px solid #00d4ff;
+    transform: rotate(0deg) skewY(0deg);
+    transform-origin: bottom left;
+    transition: 1.5s ease;
+    transition-delay: .5s;
+}
+
+/* toggled state - secondary shape */
+.auth-wrapper.toggled .secondary-shape {
+    transform: rotate(-11deg) skewY(-41deg);
+    transition-delay: 1.2s;
+}
+
+
+
+/* ========== mobile responsive styles ========== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .auth-wrapper {
+        height: auto;
+        min-height: 500px;
+        flex-direction: column;
+    }
+
+    .auth-wrapper .credentials-panel,
+    .welcome-section {
+        width: 100%;
+        position: relative;
+    }
+
+    .credentials-panel.signin,
+    .credentials-panel.signup {
+        padding: 40px 30px;
+        left: 0;
+        right: 0;
+    }
+
+    .credentials-panel.signin {
+        display: flex;
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .credentials-panel.signup {
+        display: none;
+    }
+
+    .auth-wrapper.toggled .credentials-panel.signin {
+        display: none;
+        animation: fadeOutDown 0.6s ease forwards;
+    }
+
+    .auth-wrapper.toggled .credentials-panel.signup {
+        display: flex;
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .credentials-panel.signin .slide-element,
+    .credentials-panel.signup .slide-element {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+        animation: slideInUp 0.5s ease forwards;
+    }
+
+    .credentials-panel.signin .slide-element:nth-child(1),
+    .credentials-panel.signup .slide-element:nth-child(1) {
+        animation-delay: 0.1s;
+        opacity: 0;
+    }
+
+    .credentials-panel.signin .slide-element:nth-child(2),
+    .credentials-panel.signup .slide-element:nth-child(2) {
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+
+    .credentials-panel.signin .slide-element:nth-child(3),
+    .credentials-panel.signup .slide-element:nth-child(3) {
+        animation-delay: 0.3s;
+        opacity: 0;
+    }
+
+    .credentials-panel.signin .slide-element:nth-child(4),
+    .credentials-panel.signup .slide-element:nth-child(4) {
+        animation-delay: 0.4s;
+        opacity: 0;
+    }
+
+    .credentials-panel.signin .slide-element:nth-child(5),
+    .credentials-panel.signup .slide-element:nth-child(5) {
+        animation-delay: 0.5s;
+        opacity: 0;
+    }
+
+    .credentials-panel.signup .slide-element:nth-child(6) {
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeOutDown {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .welcome-section {
+        display: none;
+    }
+
+    .credentials-panel h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .auth-wrapper .background-shape,
+    .auth-wrapper .secondary-shape {
+        display: none;
+    }
+
+    .field-wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .credentials-panel.signin,
+    .credentials-panel.signup {
+        padding: 30px 20px;
+    }
+
+    .credentials-panel h2 {
+        font-size: 24px;
+    }
+
+    .field-wrapper input,
+    .field-wrapper label {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .switch-link {
+        font-size: 13px;
+    }
+}
+
+
+/* ========================================================================
+   modal background fix (dark theme)
+   ======================================================================== */
+
+/* fix for white background, show dark theme */
+.modal-content.custom-modal {
+    /* this covers the default bootstrap white background */
+    background-color: #1a1a2e !important; 
+    
+    /* 2. remove default bootstrap borders */
+    border: none;
+    
+    /* 3. apply glowing borders and shadows on modal itself (for better look) */
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 15px #00d4ff;
+}
+
+/* 4. ensure main text inside modal is white */
+.modal-content.custom-modal * {
+    color: #fff;
+}
+
+
+/* ======================================================================== */
+
+/* ========================================================================
+   section 5: footer styles
+   ======================================================================== */
+
+/* footer container */
+.footer{
+    width: 100%;
+}
+
+/* conclusion details */
+.conc1-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 100px 0px;
+    background: -webkit-linear-gradient( left,  hsl(210, 100%, 25%), hsl(180, 70%, 45%)) !important;
+}
+
+/* conclusion heading */
+.conc1-details h2{
+    font-size: 45px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: white;
+}
+
+/* conclusion paragraph */
+.conc1-details p{
+    font-size: 17px;
+    white-space: pre-line;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px 30px;
+}
+
+/* lock icon position */
+.lock{
+    position: absolute;
+    left: 50%;
+    padding: 20px 0px;
+}
+
+/* footer bottom details */
+.conc2-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 0px;
+    background: hsl(210, 100%, 15%) !important;
+}
+
+/* footer bottom small text */
+.conc2-details small{
+    font-size: 17px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* footer links */
+.conc-links a{
+    color: white;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+/* footer links hover */
+.conc-links a:hover{
+    color: hsl(210, 80%, 50%);
+}
+
+/* footer links separator */
+.conc-links span{
+    color: white;
+    padding: 0px 20px;
+}
+
+/* conclusion button */
+.conc-btn{
+    width: 320px !important;
+    padding: 15px 15px !important;
+    font-size: 20px !important;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold !important;
+    line-height: 1.2;
+    display: inline-block;
+    background: #ffffff !important;
+    color: rgb(7, 7, 140) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* conclusion button hover */
+.conc-btn:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    transition: 0.67s ease;
+}
