@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========================================================================
+         document metadata
+         ======================================================================== -->
+    <title>Ninja Turtles - Artificial Intelligence Applications</title>
+    <!-- enables arabic character support -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ========================================================================
+         stylesheets
+         ======================================================================== -->
+    <!-- custom styles -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- ninja icon in head  -->
+    <link rel="icon" type="image/png" href="ninja.png">
+    <!-- aos library for fade animation in section 1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+      
+
+    
+</head>
+
+
+    <!-- ========================================================================
+         header & navigation
+         ======================================================================== -->
+
+
+    <!-- bootstrap class to work on all parts and expand until medium screen -->
+    <!-- nav-header is a custom css class name -->
+    <!-- navbar-dark shows the three lines icon top right -->
+    <!-- header tag for semantic html, doesn't affect anything but organization -->
+    <heaer>
+    <nav class="navbar navbar-expand-md navbar-dark nav nav-header"> 
+        <!-- brand logo and title -->
+
+        <!-- non-breaking spaces for spacing since regular spaces don't work -->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- ninja icon in header -->
+        <!-- fa-xl is the fontawesome size class -->
+        <i class="fa-solid fa-user-ninja fa-xl" style="color: #ffffff;"></i>&nbsp;
+        <!-- brand name next to icon, navbar-brand is bootstrap -->
+        <!-- linked to page top -->
+        <a class="navbar-brand title1" href="#"> Ninja Turtles</a>
+
+
+
+        <!-- toggle button (three lines) -->
+        <!-- navbar-toggler is a fixed bootstrap name -->
+        <!-- collapse targets the element with id collapsibleNavbar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!-- toggle icon shape -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <!-- navigation links -->
+        <!-- links collapse when screen shrinks -->
+        <!-- collapse for data-toggle above -->
+        <!-- navbar will collapse -->
+        <!-- all this is bootstrap -->
+        <!-- justify-content: end aligns items to the right -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: end;">
+
+            <!-- navbar contains nav with all links in unordered list -->
+            <ul class="navbar-nav list">
+                <li class="nav-item"><a class="nav-link" href="#sec2">Applications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec3">AI Models</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec4">Statistics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sec5">Conclusion</a></li>
+                <!-- empty placeholder -->
+                <!-- shows username after sign in or login -->
+                <li class="nav-item"><a class="nav-link" href="#sec1" id="userlink" style="display: none;"></a></li>
+            </ul>
+        </div>
+    </nav>
+</heaer>
+    <!-- /header & navigation -->
+
+    <!-- spacing new lines -->
+    <br><br><br>
+    <br><br>
+    
+
+    <!-- ========================================================================
+         section 1: hero section
+         ======================================================================== -->
+
+
+    <!-- main tag indicates the body content for section 1 -->
+    <main>
+        <!-- container class for bootstrap with 80% width, divides content into half image and half text -->
+        <!-- aos fade-up animation library used here -->
+        <!-- aos library name -->
+        <!-- 1000 is in milliseconds -->
+    <div class="container section1" id="sec1" data-aos="fade-up" data-aos-duration="1600">
+
+        <!-- div containing two divs side by side, one for text and one for image -->
+        <!-- row in bootstrap = display flex in css -->
+        <!-- align controls y-axis, centers them -->
+        <div class="row align-items-center"> 
+            
+            <!-- bootstrap class for medium screens and above, screen divided into 12 columns, takes 6 columns, other 6 for image -->
+            <!-- without this they stack vertically when minimized below medium -->
+            <!-- text-left aligns text and icons to left -->
+            <div class="col-md-6 text-left content-left">
+                <h1>Artificial Intelligence & Its Applications</h1>
+                <br>
+
+                <!-- used pre in css so it reads new lines -->
+                <!-- could use pre tag in html instead of p -->
+                <p>Exploring how AI is revolutionizing industries from healthcare to 
+                    transportation, making our world smarter, more efficient, and more 
+                    connected than ever before.</p>
+            </div> 
+            <!-- center is for text inside image to be centered -->
+            <!-- all this is bootstrap -->
+            <div class="col-md-6 text-center image-right">
+                <img src="photo/nnja.png" alt="Robot Illustration" class="img-fluid robot-img">
+            </div>
+
+        </div>
+     </div> 
+    </main>
+
+<!-- exploreeeeee -->
+<div class="explore-container">
+    <a href="#sec2" class="explore-text" style="color: #024783;">Explore Now</a>
+
+    <div class="arrows">
+        <!-- span keeps them inline -->
+        <span><i class="fa-solid fa-arrow-down" style="color: #024783;"></i></span>
+        <span><i class="fa-solid fa-arrow-down" style="color: #024783;"></i></span>
+        <span><i class="fa-solid fa-arrow-down" style="color: #024783;"></i></i></span>
+        <span><i class="fa-solid fa-arrow-down" style="color: #024783;"></i></i></span>
+    </div>
+</div>
+    <br><br><br><br>
+     <!-- <br><br>  -->
+
+    <section>
+
+        <!-- ====================================================================
+             section 2: ai applications
+             ==================================================================== -->
+
+        <!-- container-fluid takes full page width, container alone is 80% width with margin auto -->
+        <div class="container-fluid section2" id="sec2"  >
+<br><br>
+            <!-- section header -->
+            <div class="section2-details text-center" >
+                <h2>AI Applications in Different Fields</h2>
+                <!-- empty div for css styling to show colored line under text -->
+                <div class="section2-div"></div>
+                <p>Discover how artificial intelligence is transforming various industries and creating new 
+                    possibilities for innovation.</p>
+            </div>
+            <!-- /section header -->
+
+            <br><br>
+
+            <!-- div containing the two rows, each row has four divs (columns) -->
+            <div class="section2-divs" >
+
+                <!-- ------------------------------------------------------------------
+                     row 1: image processing, robotics, machine learning, education
+                     ------------------------------------------------------------------ -->
+
+                <div class="section2-divs-row1 row justify-content-between" >
+
+                    <!-- card 1: image & video processing -->
+                    <div class="col-md-2 col-12 mb-4 com-div" style="position: relative;" >
+                        <i class="fa-solid fa-image"></i>
+                        <h2>Image & Video Processing</h2>
+                        <small>AI enhances image and video quality and enables accurate recognition of faces, objects, and scenes.</small>
+                        <button data-toggle="modal" data-target="#myModal1" style="border: none;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+
+                    <!-- modal 1: image processing details -->
+
+                    <div class="modal fade" id="myModal1" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://api.mygermanuniversity.com/images/widgets_images/c44e503833b64e9f27197a484f4257c0_LB1gE9Z3ylrH1714724536.jpeg" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+
+                                <!-- style="padding-left: 35px; adds left spacing so it doesn't stick to frame edge for details tab -->
+                                <div class="modal-body" style="padding-left: 35px;">
+                                    <p>AI enhances image and video quality and enables accurate recognition of faces, objects, and scenes</p>
+                                    <!-- strong makes text bold -->
+                                    <!-- same as b tag -->
+                                    <strong>Before AI:</strong>
+                                    <!-- hr creates line, styled in css to be shorter to match text length -->
+                                    <!-- not bootstrap, custom class name -->
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Editing and analysis were manual and time-consuming</li>
+                                        <li>Hard to detect objects, faces, or activities in images and videos</li>
+                                        <li>Low-quality images were difficult to enhance</li>
+                                    </ul>
+
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>AI models can detect faces, objects, emotions, and actions accurately</li>
+                                        <li>Automated video surveillance analyzes footage instantly</li>
+                                        <li>AI enhances low-quality images and restores old videos</li>
+                                        <li>Deepfake creation and detection became possible using deep learning techniques</li>
+                                    </ul>
+                                </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 1 -->
+
+
+                    
+                    <!-- card 2: robotics -->
+                    <div class="col-md-2 col-12 mb-4 com-div"  >
+                        <i class="fa-solid fa-robot"></i>
+                        <h2>Robotics</h2>
+                        <small>AI makes robots more autonomous, intelligent, and capable of performing complex tasks with minimal supervision.</small>
+                        <button data-toggle="modal" data-target="#myModal2" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+                    <!-- modal 2: robotics details -->
+                    <div class="modal fade" id="myModal2" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/026/707/503/original/stem-robotics-line-2d-animation-science-technology-engineering-4k-motion-graphic-asian-young-man-robotics-engineer-operating-robots-linear-animated-cartoon-flat-concept-white-background-video.jpg" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI makes robots more autonomous, intelligent, and capable of performing complex tasks with minimal supervision</p>
+                                    <strong>Before AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Robots were limited to repetitive, pre-programmed tasks</li>
+                                        <li>Very low flexibility: they couldn't adapt to changes in the environment</li>
+                                        <li>Mostly used in factories for basic automation</li>
+                                    </ul>
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Robots can now see, understand, and make decisions through computer vision and machine learning</li>
+                                        <li>Used in smart manufacturing, healthcare, agriculture, and dangerous environments</li>
+                                        <li>Collaborative robots (cobots) work safely alongside humans</li>
+                                        <li>Autonomous robots can navigate and interact with the environment on their own</li>
+                                    </ul>
+                               </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 2 -->
+
+
+
+                    <!-- card 3: machine learning -->
+                    <div class="col-md-2 col-12 mb-4 com-div"  >
+                        <i class="fa-solid fa-brain"></i>
+                        <h2>Machine Learning</h2>
+                        <small>AI allows systems to learn from data, predict outcomes accurately, and continually improve performance.</small>
+                        <button data-toggle="modal" data-target="#myModal3" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+                    <!-- modal 3: machine learning details -->
+                    <div class="modal fade" id="myModal3" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/026/230/553/original/cooperate-with-ai-artificial-intelligence-illustration-vector.jpg" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI allows systems to learn from data, predict outcomes accurately, and continually improve performance</p>
+                                    <strong>Before AI/Machine Learning:</strong>
+                                    <hr class="line" style="width: 270px;">
+                                    <ul>
+                                        <li>Systems were rule-based: "if this happens, do that"</li>
+                                        <li>No learning from data — everything had to be manually coded</li>
+                                    </ul>
+                                    <strong>After Machine Learning:</strong>
+                                    <hr class="line" style="width: 250px;">
+                                    <ul>
+                                        <li>Systems learn automatically from data and improve over time</li>
+                                        <li>Predictive analytics became possible in almost every industry</li>
+                                        <li>Enabled innovations like recommendation systems, speech recognition, and autonomous systems</li>
+                                        <li>Huge datasets can now be processed to discover patterns impossible for humans to see</li>
+                                    </ul>
+                               </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 3 -->
+
+
+
+                    <!-- card 4: education -->
+                    <div class="col-md-2 col-12 mb-4 com-div" >
+                        <i class="fa-solid fa-book-open"></i>
+                        <h2>Education</h2>
+                        <small>AI enables personalized learning by tracking student progress and recommending tailored lessons.</small>
+                        <button data-toggle="modal" data-target="#myModal4" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+
+                    <!-- modal 4: education details -->
+                    <div class="modal fade" id="myModal4" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://cdn.vectorstock.com/i/1000v/20/43/children-and-teacher-cartoon-primary-school-vector-39052043.jpg" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI enables personalized learning by tracking student progress and recommending tailored lessons</p>
+                                    <strong>Before AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>One teaching style for all students, regardless of different learning speeds</li>
+                                        <li>Teachers had to correct exams and assignments manually</li>
+                                        <li>Limited ability to track student progress in real time</li>
+                                    </ul>
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Adaptive learning platforms personalize content according to the student's level</li>
+                                        <li>Automated grading systems save time and reduce errors</li>
+                                        <li>AI tutors provide 24/7 learning support and instant explanations</li>
+                                        <li>Data analytics help educators identify struggling students early</li>
+                                    </ul>
+                                </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 4 -->
+
+                </div>
+                <!-- /row 1 -->
+
+                <!-- ------------------------------------------------------------------
+                     row 2: medicine, cyber security, transportation, e-commerce
+                     ------------------------------------------------------------------ -->
+
+                <!-- same comments from line 206 above -->
+                <div class="section2-divs-row1 row justify-content-between">
+
+                    <!-- card 5: medicine -->
+                    <div class="col-md-2 col-12 mb-4 com-div" >
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <h2>Medicine</h2>
+                        <small>AI supports early diagnosis, medical imaging analysis, and highly accurate disease prediction.</small>
+                        <button data-toggle="modal" data-target="#myModal5" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+
+                    <!-- modal 5: medicine details -->
+                    <div class="modal fade" id="myModal5" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://th.bing.com/th/id/R.210d2f4490764f7368c6428f1915a837?rik=h9E9wp6AKudUtw&pid=ImgRaw&r=0" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI supports early diagnosis, medical imaging analysis, and highly accurate disease prediction</p>
+                                    <strong>Before AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Diagnosis depended mainly on doctors' experience and manual analysis</li>
+                                        <li>Medical imaging (like X-rays or MRIs) required long human interpretation times</li>
+                                        <li>Treatment plans were generalized, not personalized</li>
+                                    </ul>
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>AI-powered diagnostic tools can detect diseases early with high accuracy</li>
+                                        <li>Medical imaging analysis became faster and more precise using computer vision models</li>
+                                        <li>Personalized treatments are now possible using patient data and predictive analytics</li>
+                                        <li>AI-powered robots assist in surgeries and help reduce human error</li>
+                                    </ul>
+                              </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 5 -->
+
+                    <!-- card 6: cyber security -->
+                    <div class="col-md-2 col-12 mb-4 com-div" >
+                        <i class="fa-solid fa-lock"></i>
+                        <h2>Cyber Security</h2>
+                        <small>AI detects cyber threats quickly by analyzing abnormal patterns and predicting attacks.</small>
+                        <button data-toggle="modal" data-target="#myModal6" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+
+                    <!-- modal 6: cyber security details -->
+                    <div class="modal fade" id="myModal6" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://t3.ftcdn.net/jpg/05/53/78/02/360_F_553780200_i6jJTCc7YyAiNi152fIYWK2HVgeqbgHv.jpg" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI detects cyber threats quickly by analyzing abnormal patterns and predicting attacks</p>
+                                    <strong>Before AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Security systems relied on predefined rules and manual monitoring</li>
+                                        <li>Slow threat detection because everything needed human analysis</li>
+                                        <li>Difficult to keep up with evolving attack methods</li>
+                                    </ul>
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>AI detects threats in real time using pattern recognition and anomaly detection</li>
+                                        <li>Machine learning models predict future attacks based on past data</li>
+                                        <li>Automated responses reduce the risk of breaches</li>
+                                        <li>AI strengthens authentication systems (face recognition, voice ID)</li>
+                                    </ul>
+                               </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 6 -->
+
+                    <!-- card 7: transportation -->
+                    <div class="col-md-2 col-12 mb-4 com-div" >
+                        <i class="fa-solid fa-bus-simple"></i>
+                        <h2>Transportation</h2>
+                        <small>AI improves traffic management and powers safer, smarter autonomous vehicles.</small>
+                        <button data-toggle="modal" data-target="#myModal7" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+
+                    <!-- modal 7: transportation details -->
+                    <div class="modal fade" id="myModal7" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://img.freepik.com/premium-vector/colorful-isometric-illustration-various-vehicles-like-car-bus-ship-van-truck-more_1294240-89111.jpg" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI improves traffic management and powers safer, smarter autonomous vehicles</p>
+                                    <strong>Before AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Traffic control systems were manual and inefficient</li>
+                                        <li>No autonomous driving; everything relied on human drivers</li>
+                                        <li>Logistics and routing were calculated manually and often inaccurate</li>
+                                    </ul>
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Autonomous vehicles and self-driving technologies became possible</li>
+                                        <li>AI optimizes delivery routes, reducing time and fuel consumption</li>
+                                        <li>Smart traffic management systems predict congestion and adjust signals</li>
+                                        <li>Predictive maintenance reduces vehicle breakdowns using sensor data</li>
+                                    </ul>
+                                </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 7 -->
+
+                    <!-- card 8: e-commerce -->
+                    <div class="col-md-2 col-12 mb-4 com-div"  >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2>E-commerce</h2>
+                        <small>AI delivers smart product recommendations and personalized shopping experiences based on user behavior.</small>
+                        <button data-toggle="modal" data-target="#myModal8" style="border: none; background-color: #fff;">
+                            <i class="fa-solid fa-right-long" style="right: 20px !important; bottom: 0; position: absolute;"></i>
+                        </button>
+                    </div>
+
+                    <!-- modal 8: e-commerce details -->
+                    <div class="modal fade" id="myModal8" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content round_frame_edges">
+                                <div class="modal-header" style="position: relative;">
+                                    <img src="https://lh7-us.googleusercontent.com/ziJyk3-ogRBTEd4vabK71ruJgpip_ld_qdyHGVsG_t48YkrclS8HLJYJgj57WDmo88FCIh_XCVU9xzNXvTV-evWg2BVZEyUgfFPEsslMS7rFqVRGxWmbnsdyGaG_ZqeaUKQFpLVYUB8gGbaAYfLdh4E" class="round_img_corner" style="width:100%; height:200px; object-fit:cover;">
+                                </div>
+                                <div class="modal-body custom-modal-body" style="padding-left: 35px;">
+                                    <p>AI delivers smart product recommendations and personalized 
+                                        shopping experiences based on user behavior</p>
+                                    <strong>Before AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Same product recommendations for all customers</li>
+                                        <li>Customer support was fully human and slow</li>
+                                        <li>Inventory and pricing decisions were based on manual analysis</li>
+                                    </ul>
+                                    <strong>After AI:</strong>
+                                    <hr class="line">
+                                    <ul>
+                                        <li>Personalized recommendations based on user behavior (like on Amazon)</li>
+                                        <li>Chatbots provide instant customer service 24/7</li>
+                                        <li>Dynamic pricing adjusts based on demand and competitive data</li>
+                                        <li>Fraud detection systems analyze millions of transactions in real time</li>
+                                    </ul>
+                               </div> <!-- /modal-body -->
+                            </div> <!-- /modal-content -->
+                        </div> <!-- /modal-dialog -->
+                    </div> <!-- /modal fade -->
+                    <!-- /modal 8 -->
+
+                </div>
+                <!-- /row 2 -->
+
+            </div>
+            <!-- /section2-divs -->
+
+        </div>
+        <!-- /section 2: ai applications -->
+
+        <br><br><br><br><br>
+
+
+
+        <!-- ====================================================================
+             section 3: popular ai models
+             ==================================================================== -->
+
+
+        <div class="container-fluid section3" id="sec3"  >
+
+            <!-- section header -->
+            <div class="section3-details text-center"  >
+                <h2>Popular AI Models</h2>
+                <div class="section3-div"></div>
+                <p>Explore the leading AI assistants and models that are shaping the future of artificial 
+                    intelligence.</p>
+            </div>
+            <!-- /section header -->
+
+            <br><br>
+
+            <div class="section3-divs">
+
+                <!-- ------------------------------------------------------------------
+                     row 1: chatgpt, deepseek, gemini, blackbox
+                     ------------------------------------------------------------------ -->
+                <div class="section3-divs-row1 row justify-content-between"  >
+
+                    <!-- card: chatgpt -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-solid fa-comment"></i>
+                        <h2>ChatGPT</h2>
+                        <small>ChatGPT is a powerful AI model designed for natural conversation, creativity, and deep understanding across many fields.</small>
+
+                        <!-- icon next to the text -->
+                            <a href="https://chatgpt.com" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                    <!-- card: deepseek -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h2>DeepSeek</h2>
+                        <small>DeepSeek is a high-performance AI model known for fast reasoning and low computational cost.</small>
+                            <a href="https://www.deepseek.com/" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+
+                    </div>
+
+                    <!-- card: gemini -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-solid fa-g"></i>
+                        <h2>Gemini</h2>
+                        <small>Gemini is Google's most advanced AI model capable of text, image, video, and audio understanding.</small>
+                            <a href="https://gemini.google.com/app" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                    <!-- card: blackbox -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-solid fa-box-archive"></i>
+                        <h2>BlackBox</h2>
+                        <small>A coding-focused AI tool used by developers.</small>
+                            <a href="https://www.blackbox.ai/" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                </div>
+                <!-- /row 1 -->
+
+                <!-- ------------------------------------------------------------------
+                     row 2: monica, github copilot, microsoft copilot, character ai
+                     ------------------------------------------------------------------ -->
+                <div class="section3-divs-row1 row justify-content-between" >
+
+                    <!-- card: monica -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-solid fa-toolbox"></i>
+                        <h2>Monica</h2>
+                        <small>AI assistant browser extension for writing, translating, and browsing.</small>
+                            <a href="https://monica.im/" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                    <!-- card: github copilot -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-brands fa-octopus-deploy"></i>
+                        <h2>GitHub Copilot</h2>
+                        <small>AI pair programmer that suggests code and entire functions in real-life.</small>
+                            <a href="https://github.com/features/copilot" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                    <!-- card: microsoft copilot -->
+                    <div class="col-md-2 col-12 mb-4 sct-div">
+                        <i class="fa-brands fa-microsoft"></i>
+                        <h2>Microsoft Copilot</h2>
+                        <small>Microsoft integrated AI into Bing using advanced language models.</small>
+                            <a href="https://copilot.microsoft.com/imagine" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                    <!-- card: character ai -->
+                    <div class="col-md-2 col-12 mb-4 sct-div"  >
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                        <h2>Character AI</h2>
+                        <small>An AI platform where anyone can create custom AI characters with unique personalities.</small>
+                           <a href="https://character.ai/" target="_blank">Visit Site<i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+
+                </div>
+                <!-- /row 2 -->
+
+            </div>
+            <!-- /section3-divs -->
+
+        </div>
+        <!-- /section 3: popular ai models -->
+
+        
+
+        <!-- ====================================================================
+             section 4: ai usage statistics
+             ==================================================================== -->
+
+        <div class="container section4" id="sec4"  >
+            <!-- section header -->
+            <div class="section4-details text-center"  >
+                <h2>AI Models Usage Statistics</h2>
+                <!-- empty div for line styling -->
+                <div class="section4-div"></div>
+                <p>Analyzing the adoption and usage trends of popular AI models over the past three years.</p>
+            </div>
+            <!-- /section header -->
+
+        <br>
+        <!-- div containing the two elements inside -->
+        <!-- row puts everything side by side, justify creates spacing between divs -->
+            <div class="row justify-content-between"  >
+
+                <!-- ------------------------------------------------------------------
+                     statistics table
+                     ------------------------------------------------------------------ -->
+
+                <div class="col-md-6 col-12 mb-3 div5-table"  >
+                    <table class="table table-light table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th>AI Model</th>
+                                <th>2023</th>
+                                <th>2024</th>
+                                <th>2025</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>ChatGPT</td>
+                                <td>17%</td>
+                                <td>21%</td>
+                                <td>26%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>DeepSeek</td>
+                                <td>5%</td>
+                                <td>9%</td>
+                                <td>14%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>Gemini</td>
+                                <td>6%</td>
+                                <td>11%</td>
+                                <td>18%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>BlackBox</td>
+                                <td>3%</td>
+                                <td>7%</td>
+                                <td>12%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>Monica</td>
+                                <td>3%</td>
+                                <td>4%</td>
+                                <td>8%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>GitHub Copilot</td>
+                                <td>15%</td>
+                                <td>22%</td>
+                                <td>28%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>Microsoft Copilot</td>
+                                <td>10%</td>
+                                <td>16%</td>
+                                <td>24%</td>
+                            </tr>
+                            <tr style="color: #6c7a89; font-weight: bold;">
+                                <td>Character AI</td>
+                                <td>13%</td>
+                                <td>19%</td>
+                                <td>27%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                <!-- table closing -->
+                <!-- /statistics table -->
+
+                <!-- ------------------------------------------------------------------
+                     bar chart visualization
+                     ------------------------------------------------------------------ -->
+                <div class="col-md-6 col-12 mb-3 div5-charts"  >
+
+                    <!-- custom class name chart-wrapper -->
+                    <div class="chart-wrapper">
+                        <h3 class="chart-title">Usage Comparison (% Market Share)</h3>
+                        <div class="bar-chart">
+
+                            <!-- chatgpt -->
+                            <div class="chart-row">
+                                <span class="chart-label">ChatGPT</span>
+
+                                <!-- div to split the 3 percentages -->
+                                <div class="chart-bars">
+                                    <!-- 3 empty divs for styling -->
+                                    <div class="chart-bar bar-2023" style="width: 35%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 40%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 38%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- deepseek -->
+                            <div class="chart-row">
+                                <span class="chart-label">DeepSeek</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 5%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 12%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 18%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- gemini -->
+                            <div class="chart-row">
+                                <span class="chart-label">Gemini</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 8%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 15%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 20%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- monica -->
+                            <div class="chart-row">
+                                <span class="chart-label">Monica</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 3%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 5%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 6%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- blackbox -->
+                            <div class="chart-row">
+                                <span class="chart-label">BlackBox</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 4%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 6%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 7%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- github copilot -->
+                            <div class="chart-row">
+                                <span class="chart-label">GitHub Co.</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 20%;"></div>
+
+                                    <div class="chart-bar bar-2024" style="width: 22%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 25%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- microsoft copilot -->
+                            <div class="chart-row">
+                                <span class="chart-label">Microsoft</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 10%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 8%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 7%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+                            
+                            <!-- character ai -->
+                            <div class="chart-row">
+                                <span class="chart-label">Character AI</span>
+                                <div class="chart-bars">
+                                    <div class="chart-bar bar-2023" style="width: 5%;"></div>
+                                    <div class="chart-bar bar-2024" style="width: 12%;"></div>
+                                    <div class="chart-bar bar-2025" style="width: 15%;"></div>
+                                </div> <!-- /charts-bars -->
+                            </div> <!-- /chart-row -->
+
+                        </div> <!-- /bar-chart -->
+                        
+                        <!-- div containing the percentage reference legend -->
+                        <div class="chart-legend">
+
+                            <div class="legend-item">
+                                <div class="legend-color bar-2023"></div>
+                                <span>2023</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color bar-2024"></div>
+                                <span>2024</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color bar-2025"></div>
+                                <span>2025</span>
+                            </div>
+                        </div>
+
+                    </div> <!-- /chart-wrapper -->
+
+                </div> <!-- /div5-charts -->
+
+                <!-- /bar chart visualization -->
+
+            </div><!-- /row -->
+
+        </div>
+        <!-- /section 4: ai usage statistics -->
+
+    </section>
+
+    <br><br><br><br>
+
+    <!-- ========================================================================
+         section 5: footer & conclusion
+         ======================================================================== -->
+
+    <footer>
+
+        <div class="footer" id="sec5">
+
+            <div class="conc1 ">
+
+                <!-- ------------------------------------------------------------------
+                     conclusion content
+                     ------------------------------------------------------------------ -->
+                <div class="conc1-details" >
+                    <h2>Conclusion</h2>
+                    <br>
+                    <p>Artificial Intelligence has become an indispensable part of our modern world, transforming 
+                        industries from healthcare and education to transportation and e-commerce. As AI models 
+                        continue to evolve, becoming more accessible and powerful, we stand at the threshold of 
+                        unprecedented possibilities. The future belongs to those who embrace this technology, 
+                        understanding both its immense potential and the responsibility that comes with it. Whether you 
+                        are a developer, researcher, or simply curious about technology, now is the perfect time to begin 
+                        your AI journey.</p>
+                    <br>
+
+                    <!-- btn has bootstrap styles to remove border -->
+                    <button type="button" class="btn conc-btn" data-toggle="modal" data-target="#myModal" style="width: 200px; margin: auto;">
+                        Start Your Journey Now
+                    </button>
+                </div>
+                <!-- /conclusion content -->
+
+                <!-- ------------------------------------------------------------------
+                     login modal
+                     ------------------------------------------------------------------ -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content custom-modal">
+
+                            <!-- close button -->
+                            <!-- <button type="button" class="close close-btn" data-dismiss="modal">&times;</button> -->
+
+                            <!-- modal icon -->
+                           
+                            <!-- modal body - login form -->
+                          
+                               <div class="auth-wrapper">
+        <div class="background-shape"></div>
+        <div class="secondary-shape"></div>
+        <div class="credentials-panel signin">
+            <h2 class="slide-element">Login</h2>
+            <form action="#">
+                <div class="field-wrapper slide-element">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <button class="submit-button" type="submit">Login</button>
+                </div>
+
+                <div class="switch-link slide-element">
+                    <p>Don't have an account? <br> <a href="#" class="register-trigger">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-section signin">
+            <h2 class="slide-element">WELCOME BACK!</h2>
+        </div>
+
+        <div class="credentials-panel signup">
+            <h2 class="slide-element">Register</h2>
+            <form action="#">
+                <div class="field-wrapper slide-element">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <button class="submit-button" type="submit">Register</button>
+                </div>
+
+                <div class="switch-link slide-element">
+                    <p>Already have an account? <br> <a href="#" class="login-trigger">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-section signup">
+            <h2 class="slide-element">WELCOME!</h2>
+        </div>
+
+    </div>
+                            
+                            <!-- /modal body -->
+
+                        </div>
+                        <!-- /modal-content -->
+                    </div>
+                    <!-- /modal-dialog -->
+                </div>
+                <!-- /login modal -->
+
+                <!-- ------------------------------------------------------------------
+                     footer bottom links
+                     ------------------------------------------------------------------ -->
+
+                <!-- display: flex arranges as row, direction set to column -->
+                <div class="conc2-details" >
+                    <small>Your gateway to understanding artificial intelligence and its transformative applications.</small>
+                    <br>
+
+                    <!-- navigation links -->
+                    <div class="conc-links">
+                        <a href="#">Contact Us</a>
+                        <span>|</span>
+                        <a href="#">Terms Of Service</a>
+                        <span>|</span>
+                        <a href="#">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#">About Us</a>
+                    </div>
+                    <!-- /navigation links -->
+
+                </div>
+                <!-- /footer bottom links -->
+
+            </div>
+            <!-- /conc1 -->
+
+        </div>
+        <!-- /footer -->
+
+    </footer>
+
+    <!-- ========================================================================
+         scripts
+         ======================================================================== -->
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom script -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+   </script>
+
+</body>
+
+</html>
