@@ -97,6 +97,9 @@ body{
         width: 100%;
         text-align: center;
     }
+    .section2-divs-row1{
+        justify-content: center !important;
+    }
 }
 
 /* scroll margin for sticky header offset on each section */
